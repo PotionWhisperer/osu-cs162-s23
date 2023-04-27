@@ -10,9 +10,6 @@ Description: Takes the numbers in a text file and sums them up.
 
 """
 
-import os
-print(os.getcwd())
-
 
 
 def convert_str_to_int(str_input):
