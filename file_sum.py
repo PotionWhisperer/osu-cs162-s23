@@ -43,6 +43,11 @@ def file_sum(list_of_numbers):
     for number in list_of_numbers:
         number = convert_str_to_int(number)
         sum += number
+    
+
+    with open("sum.txt", 'w') as payload:
+        payload.write(str(sum))
+        
     return sum
 
 
