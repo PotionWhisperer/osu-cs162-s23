@@ -19,6 +19,7 @@ def convert_str_to_int(str_input):
 
     str_input = str_input.rstrip()
 
+    # if the number is not an int then it is a float that must be converted to an int.
     try:
         int_output = int(str_input)
     except ValueError:
@@ -31,7 +32,7 @@ def convert_str_to_int(str_input):
 
 def file_sum(list_of_numbers):
     """
-    Calculates the sum of a list of numbers.
+    Strips any extra new lines and performs an str to int conversation, this number is summed up and outputted to sum.txt
 
     """
     numbers_file = open(list_of_numbers, 'r+')
