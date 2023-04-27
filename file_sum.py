@@ -34,7 +34,7 @@ def file_sum(list_of_numbers):
     Calculates the sum of a list of numbers.
 
     """
-    numbers_file = open(list_of_numbers, 'rw+')
+    numbers_file = open(list_of_numbers, 'r+')
     list_of_numbers = numbers_file.read()
     list_of_numbers = list_of_numbers.split('\n')
     numbers_file.close()
