@@ -19,14 +19,14 @@ def convert_str_to_int(str_input):
 
     str_input = str_input.rstrip()
 
-    # if the number is not an int then it is a float that must be converted to an int.
+    # if the number is not an int then it is a float that must be added.
     try:
         int_output = int(str_input)
     except ValueError:
         try:
-            int_output = int(float(str_input))
+            int_output = float(str_input)
         except ValueError:
-            raise ValueError(f"Cannot convert '{str_input}' to an integer")
+            raise ValueError(f"Cannot convert '{str_input}' into float or int")
 
     return int_output
 
